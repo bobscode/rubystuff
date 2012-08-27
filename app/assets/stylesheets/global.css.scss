@@ -1,0 +1,60 @@
+@import "bootstrap";
+
+// Place all the styles related to the user_session controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$red: #FF0000;
+$backgroundGreen: #1B7B65;
+$alertGreen: lighten($backgroundGreen, 30%);
+$white: #FFFFFF;
+
+.error {
+    color: $red;
+}
+
+.notice {
+    color: $alertGreen;
+}
+
+h1, h2 {
+    font-family: myriad, Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: $backgroundGreen;
+    min-height: 100%;
+
+    #content {
+        margin: 80px;
+        padding: 30px;
+        min-height: 100%;
+        background-color: $white;
+
+        #header {
+
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            img {
+                float: left;
+            }
+            h1 {
+                padding-top: 33px;
+            }
+
+            span {
+                float: right;
+                padding-top: 40px;
+                max-width: 20%;
+            }
+
+        }
+
+        #page {
+            padding-top: 30px;
+            margin: 30px;
+        }
+    }
+}

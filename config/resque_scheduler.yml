@@ -1,0 +1,14 @@
+# Arizona
+
+run_tasks:
+  cron: "0 3 * * 2-6"
+  class: Arizona::RunTasks
+  description: "Run Tasks"
+  args:
+
+load_job_comments:
+  cron: "0 1 * * 6"
+  class: Arizona::LoadJobsComments
+  description: "Load Job comments"
+  args:
+

@@ -1,0 +1,36 @@
+<h2>Customer Notes</h2>
+<h6>Older than 1 year</h6>
+<br>
+<table class="table table-striped">
+  <thead>
+  	<tr>
+		<th></th>
+    	<th width="100px">Customer ID</th>
+    	<th width="600px">Comment</th>
+        <th>Date</th>
+        <th>Key</th>
+    	<th>Date Created</th>
+		<th>Date Modified</th>
+  	</tr>
+  </thead>
+  <tbody>
+<% @arizona_customer_notes.each do |customer_note| %>
+  <tr>
+	<td><%= link_to 'View', customer_note_path(customer_note.customer_id, customer_note) %></td>
+    <td><%= customer_note.customer_id %></td>
+    <td><%= customer_note.comment.html_safe%></td>
+    <td><%= customer_note.date %></td>
+    <td><%= customer_note.key %></td>
+    <td><%= customer_note.qb_created.strftime('%Y-%m-%d %H:%M') %></td>
+	<td><%= customer_note.qb_modified.strftime('%Y-%m-%d %H:%M') %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+<div class="digg_pagination">
+  <table align="center">
+	<tr><td><%= will_paginate @arizona_customer_notes, :container => false %></td></tr>
+	<tr><td align="center"><%= page_entries_info @arizona_customer_notes %></td></tr>
+  </table>
+<br />
+</div>

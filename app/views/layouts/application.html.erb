@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= yield :title %></title>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" %>
+    <%= yield :head %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="content">
+    <div id="header">
+        <%= image_tag "logo.gif", :alt => "Rescare Logo" %>
+        <% if logged_in? %><span id="login_label">Welcome, <%= @user.first_name.html_safe %> <%= @user.last_name.html_safe %>.
+        <%= link_to "Log Out", :controller => "user_session", :action => "destroy", :region => @region %></span>
+        <% end %>
+        <h1><%= yield :title %></h1>
+    </div>
+
+    <% if flash[:error] %> <p class="error"><%= flash[:error] %></p>
+    <% end %>
+    <% if flash[:notice] %> <p class="notice"><%= flash[:notice] %></p>
+    <% end %>
+    <div id="page">
+    <%= yield %>
+    </div>
+</div>
+</body>
+</html>

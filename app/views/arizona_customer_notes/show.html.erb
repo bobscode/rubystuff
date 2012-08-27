@@ -1,0 +1,135 @@
+<div class="container-fluid2">
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Customer id:</b>
+  <%= @arizona_customer_note.customer_id %>
+</p>
+
+<p>
+  <b>Comment:</b><br>
+  <%= @arizona_customer_note.comment.html_safe %>
+</p>
+
+<p>
+  <b>Record #:</b>
+  <%= @arizona_customer_note.record_id %>
+</p>
+
+<p>
+  <b>Related staff:</b>
+  <%= @arizona_customer_note.related_staff %>
+</p>
+
+<p>
+  <b>Staff Name:</b>
+  <%= @arizona_customer_note.staff_name %>
+</p>
+
+<p>
+  <b>Related Office:</b>
+  <%= @arizona_customer_note.related_office %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @arizona_customer_note.status %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @arizona_customer_note.date %>
+</p>
+
+<p>
+  <b>Denied Reason:</b>
+  <%= @arizona_customer_note.denied_reason %>
+</p>
+
+<p>
+  <b>Qb created:</b>
+  <%= @arizona_customer_note.qb_created.strftime('%Y-%m-%d %H:%M') %>
+</p>
+
+<p>
+  <b>Qb last modified:</b>
+  <%= @arizona_customer_note.qb_modified.strftime('%Y-%m-%d %H:%M') %>
+</p>
+
+<p>
+  <b>Qb modified by:</b>
+  <%= @arizona_customer_note.qb_modified_by %>
+</p>
+
+<p>
+  <b>Key:</b>
+  <%= @arizona_customer_note.key %>
+</p>
+
+<p>
+  <b>ADABAS ISN:</b>
+  <%= @arizona_customer_note.adabas_isn %>
+</p>
+
+<p>
+  <b>DPS PE SEQ:</b>
+  <%= @arizona_customer_note.dps_pe_seq %>
+</p>
+
+<p>
+  <b>Jobs ID:</b>
+  <%= @arizona_customer_note.jobs_id %>
+</p>
+
+<p>
+  <b>System Screen:</b>
+  <%= @arizona_customer_note.system_screen %>
+</p>
+
+<p>
+  <b>Benefit Start Date:</b>
+  <%= @arizona_customer_note.benefit_start_date.strftime('%Y-%m-%d') %>
+</p>
+
+<p>
+  <b>System Page:</b>
+  <%= @arizona_customer_note.system_page %>
+</p>
+
+<p>
+  <b>Jobs Asgn Cwrkr:</b>
+  <%= @arizona_customer_note.jobs_asgn_cwrkr %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @arizona_customer_note.time.strftime('%Y-%m-%d %H:%M') %>
+</p>
+
+<p>
+  <b>Last Comment #:</b>
+  <%= @arizona_customer_note.last_comment_number %>
+</p>
+
+<p>
+  <b>Monthly Review:</b>
+  <%= @arizona_customer_note.monthly_review %>
+</p>
+
+<p>
+  <b>Jobs Status:</b>
+  <%= @arizona_customer_note.jobs_status %>
+</p>
+
+<p>
+  <b>Jobs Start Date:</b>
+  <%= @arizona_customer_note.jobs_start_date.strftime('%Y-%m-%d') %>
+</p>
+
+<p>
+  <b>Jobs Cost CTR:</b>
+  <%= @arizona_customer_note.jobs_cost_ctr %>
+</p>
+
+<%= link_to 'Back', "/portal/customer/#{@arizona_customer_note.customer_id}/notes" %>
+<br><br>
+</div>

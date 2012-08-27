@@ -1,0 +1,524 @@
+development:
+  ftp:
+    login: "infocus-1"
+    password: ""
+    host: "ftp.azdes.gov"
+  client:
+    username: "system-user@advantagesoftware.net"
+    password: ""
+    domain: "rci"
+    dbid: "bgmikdufa"
+  cache:
+    db: 3
+  resque:
+    db: 4
+  tables:
+    doc_uploads:
+      dbid: bgmikd22a
+      fields:
+        rec_id: 3
+        jobs_id: 7
+        related_tanf: 15
+    verification_documents:
+      dbid: bgmikd2zg
+      fields:
+        rec_id: 3
+        jobs_id: 14
+        related_tanf: 16
+    staff:
+      dbid: bgmikd2ke
+      fields:
+        rec_id: 3
+        staff_code: 48
+    benefits:
+      dbid: bgmikd2k2
+      purge_query: 7
+      fields:
+        rec_id: 3
+        adabas_isn: 6
+        case_number: 7
+        date_issued: 8
+        issuance_type_code: 9
+        benefit_month: 10
+        date_mailed: 11
+        amount: 12
+        program_type_code: 13
+        benefit_type_code: 14
+        related_case: 28
+    family_members:
+      dbid: bgmikd2iq
+      purge_query: 7
+      fields:
+        rec_id: 3
+        adabas_isn: 52
+        dps_seq: 54
+        case_number: 69
+        related_case: 68
+        benefit_month: 55
+        customer_number: 40
+        relationship: 56
+        parent1: 57
+        parent2: 58
+        cb_adabas_isn: 53
+        dob: 14
+        grad: 60
+        enroll: 61
+        grad_date: 62
+        timestamp: 63
+    cases:
+      dbid: bgmknsy44
+      fields:
+        rec_id: 3
+        case_number: 6
+        updated: 14
+    offices:
+      dbid: bgmikd2kd
+      fields:
+        rec_id: 3
+        jobs_cost_ctr: 25
+    customer_work_history:
+      dbid: bgmikd2h4
+      fields:
+        related_staff: 54
+        last_updated_date: 52
+        last_updated_by: 53
+        customer_id: 25
+    customer_education_history:
+      dbid: bgmikd2h6
+      fields:
+        highest_grade: 41
+        degree_earned: 11
+        education_level: 42
+        highest_grade_completed_1: 43
+        highest_grade_completed_2: 44
+        enrolled_in_hs: 45
+        related_staff: 60
+        last_updated_date: 53
+        last_updated_by: 54
+        degree_1: 55
+        degree_2: 56
+        grad_ged: 57
+        enroll_school: 58
+        duration: 59
+        customer_id: 25
+    tanf_profiles:
+      dbid: bgmikd2is
+      fields:
+        rid: 10
+        office_id: 107
+        related_staff: 102
+    customers:
+      dbid: bgmikd2d5
+      fields:
+        rec_id: 3
+        fii_jobs_aztecs_adabas_isn: 334
+        fii_client_adabas_isn: 332
+        customer_id: 314
+        case_number: 174
+        jobs_id: 247
+        jobs_flag: 275
+        acyf_flag: 276
+        source_last_updated_date: 277
+        source_last_updated_by: 278
+        gender: 88
+        dob: 24
+        ethnicity: 87
+        family_size: 279
+        language: 173
+        handicap: 280
+        case_status: 96
+        marital_code: 281
+        afdc_case_status: 282
+        county_code: 283
+        source_system_code: 284
+        source_system_date: 285
+        afdc_program_status: 286
+        area_code: 330
+        phone_number: 10
+        last_name: 9
+        first_name: 7
+        middle_name: 8
+        af_close_reason: 287
+        case_eval_code: 288
+        special_project_code: 289
+        special_project_date: 290
+        program_code: 291
+        fs_participation_code: 292
+        fs_program_status: 293
+        ti_benefit_counter: 294
+        ch_counter: 295
+        program_end_date: 296
+        participation_end_date: 297
+        were_exempt_reason1: 298
+        were_exempt_reason2: 299
+        tribal_code: 300
+        afdc_office_code: 301
+        address: 13
+        address2: 302
+        city: 14
+        zip: 16
+        state: 15
+        alternate_address: 21
+        alternate_address2: 303
+        alternate_city: 22
+        alternate_zip: 49
+        alternate_state: 23
+        alternate_area_code: 304
+        alternate_phone: 305
+        jobs_assigned_coworker_code: 306
+        jobs_cost_center: 307
+        rid: 6
+        related_office: 386
+        related_case: 427
+        date_modified: 2
+        up_case_ind: 248
+        work_reg_code: 249
+        volunteer: 250
+        mand_vol: 251
+        relationship: 252
+        incapacity_ind: 253
+        afdc_type: 254
+        rural_ind: 255
+        custodial_parent: 256
+        little_no_work: 257
+        last_updated_dt: 261
+        tgt_pop: 262
+        referral_date: 263
+        priority: 264
+        fs_referral_date: 265
+        fs_volunteer: 266
+        transportation: 267
+        fs_part_start_date: 268
+        cert_period_end: 269
+        fs_program_end_date: 270
+        fs_part_end_date: 271
+        fs_work_reg_date: 272
+        std_lvl: 273
+        jobs_client_adbas_isn: 333
+        veteran: 139
+        previous_jobs_id_count: 335
+        serv_bedp_rec: 336
+        orientation_attended: 337
+        employment_goal: 338
+        employment_plan_signed: 339
+        tanf_registration_amount: 340
+        fs_at_registration_amount: 341
+        last_updated_term: 342
+        last_updated_time: 343
+        last_updated_sys: 344
+        source_cd: 345
+        source_dt: 346
+        orientation_date: 347
+        es_agreement_date: 348
+        probation: 349
+        compliance_indicator_code: 350
+        compliance_date: 351
+        probation_end_date: 352
+        entry_id: 353
+        jobs_assigned_coworker_code: 306
+        date_coworker_assigned: 355
+        prev_jobs_id: 356
+        prev_jobs_ind: 357
+        jobs_stat_compl: 358
+        jobs_stat_code: 309
+        jobs_stat_reason: 310
+        jobs_stat_date: 311
+        orientation_completion_date: 362
+        jobs_activity_center: 363
+        voc_activity_center: 364
+        deferral_review_date: 313
+        special_program: 366
+        fs_priority: 367
+        child_ctr_under_1: 368
+        housing_barrier: 369
+        health_barrier: 370
+        substance_abuse_barrier: 371
+        domestic_violence_barrier: 372
+        legal_barrier: 373
+        child_care_barrier: 374
+        transportation: 267
+        deferral_type: 312
+        timestamp: 377
+        related_staff: 110
+        head_of_household_type: 401
+        family_setting: 402
+        number_of_children: 403
+    customer_notes:
+      dbid: bgmikd2fa
+      fields:
+        rec_id: 3
+        adabas_isn: 54
+        dps_pe_seq: 55
+        jobs_id: 56
+        key: 65
+        customer: 7
+        cost_center: 70
+        screen_id: 57
+        initial_date: 58
+        com_page: 59
+        jobs_asn_coworker: 60
+        date_entered: 8
+        time_entered: 61
+        comment: 9
+        related_office: 62
+
+production:
+  ftp:
+    login: "infocus-1"
+    password: ""
+    host: "ftp.azdes.gov"
+  client:
+    username: "system-user@advantagesoftware.net"
+    password: ""
+    domain: "rci"
+  cache:
+    db: 5
+  resque:
+    db: 6
+  tables:
+    doc_uploads:
+      dbid: bf6dptdqm
+      fields:
+        rec_id: 3
+        jobs_id: 7
+        related_tanf: 15
+    verification_documents:
+      dbid: bf6dptdq9
+      fields:
+        rec_id: 3
+        jobs_id: 14
+        related_tanf: 16
+    staff:
+      dbid: bf6dptdp8
+      fields:
+        rec_id: 3
+        staff_code: 48
+    benefits:
+      dbid: bf6dptdqy
+      purge_query: 7
+      fields:
+        rec_id: 3
+        adabas_isn: 6
+        case_number: 7
+        date_issued: 8
+        issuance_type_code: 9
+        benefit_month: 10
+        date_mailed: 11
+        amount: 12
+        program_type_code: 13
+        benefit_type_code: 14
+        related_case: 28
+    family_members:
+      dbid: bf6dptdj9
+      purge_query: 7
+      fields:
+        rec_id: 3
+        adabas_isn: 52
+        dps_seq: 54
+        benefit_month: 55
+        customer_number: 71
+        relationship: 56
+        parent1: 57
+        parent2: 58
+        cb_adabas_isn: 53
+        dob: 14
+        grad: 60
+        enroll: 61
+        grad_date: 62
+        timestamp: 63
+        related_case: 66
+    cases:
+      dbid: bgpsm23uk
+      fields:
+        rec_id: 3
+        case_number: 6
+        updated: 14
+    offices:
+      dbid: bf6dptdp5
+      fields:
+        rec_id: 3
+        jobs_cost_ctr: 25
+    customer_work_history:
+      dbid: bf6dptdjt
+      fields:
+        related_staff: 54
+        last_updated_date: 52
+        last_updated_by: 53
+        customer_id: 25
+    customer_education_history:
+      dbid: bf6dptdjv
+      fields:
+        highest_grade: 41
+        degree_earned: 11
+        education_level: 42
+        highest_grade_completed_1: 43
+        highest_grade_completed_2: 44
+        enrolled_in_hs: 45
+        related_staff: 60
+        last_updated_date: 53
+        last_updated_by: 54
+        degree_1: 55
+        degree_2: 56
+        grad_ged: 57
+        enroll_school: 58
+        duration: 59
+        customer_id: 25
+    tanf_profiles:
+      dbid: bf6dptdkc
+      fields:
+        rid: 10
+        office_id: 107
+        related_staff: 102
+    customers:
+      dbid: bf6dptdg6
+      fields:
+        rec_id: 3
+        fii_jobs_aztecs_adabas_isn: 334
+        fii_client_adabas_isn: 332
+        customer_id: 314
+        case_number: 174
+        jobs_id: 247
+        jobs_flag: 275
+        acyf_flag: 276
+        source_last_updated_date: 277
+        source_last_updated_by: 278
+        gender: 88
+        dob: 24
+        ethnicity: 87
+        family_size: 279
+        language: 173
+        handicap: 280
+        case_status: 96
+        marital_code: 281
+        afdc_case_status: 282
+        county_code: 283
+        source_system_code: 284
+        source_system_date: 285
+        afdc_program_status: 286
+        area_code: 330
+        phone_number: 10
+        last_name: 9
+        first_name: 7
+        middle_name: 8
+        af_close_reason: 287
+        case_eval_code: 288
+        special_project_code: 289
+        special_project_date: 290
+        program_code: 291
+        fs_participation_code: 292
+        fs_program_status: 293
+        ti_benefit_counter: 294
+        ch_counter: 295
+        program_end_date: 296
+        participation_end_date: 297
+        were_exempt_reason1: 298
+        were_exempt_reason2: 299
+        tribal_code: 300
+        afdc_office_code: 301
+        address: 13
+        address2: 302
+        city: 14
+        zip: 16
+        state: 15
+        alternate_address: 21
+        alternate_address2: 303
+        alternate_city: 22
+        alternate_zip: 49
+        alternate_state: 23
+        alternate_area_code: 304
+        alternate_phone: 305
+        jobs_assigned_coworker_code: 306
+        jobs_cost_center: 307
+        rid: 6
+        related_office: 386
+        related_case: 427
+        date_modified: 2
+        up_case_ind: 248
+        work_reg_code: 249
+        volunteer: 250
+        mand_vol: 251
+        relationship: 252
+        incapacity_ind: 253
+        afdc_type: 254
+        rural_ind: 255
+        custodial_parent: 256
+        little_no_work: 257
+        last_updated_dt: 261
+        tgt_pop: 262
+        referral_date: 263
+        priority: 264
+        fs_referral_date: 265
+        fs_volunteer: 266
+        transportation: 267
+        fs_part_start_date: 268
+        cert_period_end: 269
+        fs_program_end_date: 270
+        fs_part_end_date: 271
+        fs_work_reg_date: 272
+        std_lvl: 273
+        jobs_client_adbas_isn: 333
+        veteran: 139
+        previous_jobs_id_count: 335
+        serv_bedp_rec: 336
+        orientation_attended: 337
+        employment_goal: 338
+        employment_plan_signed: 339
+        tanf_registration_amount: 340
+        fs_at_registration_amount: 341
+        last_updated_term: 342
+        last_updated_time: 343
+        last_updated_sys: 344
+        source_cd: 345
+        source_dt: 346
+        orientation_date: 347
+        es_agreement_date: 348
+        probation: 349
+        compliance_indicator_code: 350
+        compliance_date: 351
+        probation_end_date: 352
+        entry_id: 353
+        jobs_assigned_coworker_code: 306
+        date_coworker_assigned: 355
+        prev_jobs_id: 356
+        prev_jobs_ind: 357
+        jobs_stat_compl: 358
+        jobs_stat_code: 309
+        jobs_stat_reason: 310
+        jobs_stat_date: 311
+        orientation_completion_date: 362
+        jobs_activity_center: 363
+        voc_activity_center: 364
+        deferral_review_date: 313
+        special_program: 366
+        fs_priority: 367
+        child_ctr_under_1: 368
+        housing_barrier: 369
+        health_barrier: 370
+        substance_abuse_barrier: 371
+        domestic_violence_barrier: 372
+        legal_barrier: 373
+        child_care_barrier: 374
+        transportation: 267
+        deferral_type: 312
+        timestamp: 377
+        related_staff: 110
+        head_of_household_type: 401
+        family_setting: 402
+        number_of_children: 403
+    customer_notes:
+      dbid: bf6dptdjs
+      fields:
+        adabas_isn: 54
+        dps_pe_seq: 55
+        jobs_id: 56
+        key: 65
+        customer: 7
+        cost_center: 70
+        screen_id: 57
+        initial_date: 58
+        com_page: 59
+        jobs_asn_coworker: 60
+        date_entered: 8
+        time_entered: 61
+        comment: 9
+        related_office: 62
